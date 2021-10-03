@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser ,faServer,faCalendar,faBlog,faAddressCard,faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faServer, faCalendar, faBlog, faAddressCard, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     const userIcon = <FontAwesomeIcon icon={faUser} />
@@ -17,7 +17,7 @@ const Header = () => {
             <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
                 <div class="container-fluid">
                     <NavLink className="navbar-brand" to="/">
-                       <img className="img-fluid" src={logo} alt="" />
+                        <img className="img-fluid" src={logo} alt="" />
                     </NavLink>
 
                     <div></div>
@@ -36,35 +36,29 @@ const Header = () => {
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" exact to="/">
-                                   {userIcon} Home
+                                    {userIcon} Home
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" exact to="/services">
-                                   {serverIcon} Services
+                                    {serverIcon} Services
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" exact to="/events">
-                                   {bellIcon} Events
+                                    {bellIcon} Events
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" to="/blogs">
-                                   {blogIcon} Blogs
+                                    {blogIcon} Blogs
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" to="/about">
-                                   {aboutIcon} About
+                                    {aboutIcon} About
                                 </NavLink>
                             </li>
-                            <li class="nav-item">
-                                <NavLink activeClassName="nav-link" to="/">
-                                   {phoneIcon} Contact Us
-                                </NavLink>
-                            </li>
-
 
                         </ul>
                         <form class="d-flex">
