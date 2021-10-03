@@ -1,9 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser ,faServer,faCalendar,faBlog,faAddressCard,faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
+    const userIcon = <FontAwesomeIcon icon={faUser} />
+    const serverIcon = <FontAwesomeIcon icon={faServer} />
+    const bellIcon = <FontAwesomeIcon icon={faCalendar} />
+    const blogIcon = <FontAwesomeIcon icon={faBlog} />
+    const aboutIcon = <FontAwesomeIcon icon={faAddressCard} />
+    const phoneIcon = <FontAwesomeIcon icon={faPhone} />
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
@@ -28,27 +36,32 @@ const Header = () => {
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" exact to="/">
-                                    Home
+                                   {userIcon} Home
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" exact to="/services">
-                                    Services
+                                   {serverIcon} Services
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" exact to="/events">
-                                    Events
+                                   {bellIcon} Events
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" to="/blogs">
-                                    Blogs
+                                   {blogIcon} Blogs
                                 </NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink activeClassName="nav-link" to="/about">
-                                    About
+                                   {aboutIcon} About
+                                </NavLink>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink activeClassName="nav-link" to="/">
+                                   {phoneIcon} Contact Us
                                 </NavLink>
                             </li>
 
