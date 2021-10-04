@@ -2,8 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from '../../images/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faServer, faCalendar, faBlog, faAddressCard, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faServer, faCalendar, faBlog, faAddressCard, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const userIcon = <FontAwesomeIcon icon={faUser} />
