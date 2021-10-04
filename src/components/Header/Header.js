@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSpring, animated } from 'react-spring';
 import './Header.css';
 import logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faServer, faCalendar, faBlog, faAddressCard, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const Header = () => {
     const userIcon = <FontAwesomeIcon icon={faUser} />
@@ -11,12 +13,22 @@ const Header = () => {
     const bellIcon = <FontAwesomeIcon icon={faCalendar} />
     const blogIcon = <FontAwesomeIcon icon={faBlog} />
     const aboutIcon = <FontAwesomeIcon icon={faAddressCard} />
+    const [flip, set] = useState(false);
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
                 <div class="container-fluid">
                     <NavLink className="navbar-brand" to="/">
-                        <img className="img-fluid " src={logo} alt="" />
+                        <animated.div style={useSpring({
+                            to: { opacity: 1 },
+                            reset: true,
+                            reverse: flip,
+                            delay: 200,
+                            onRest: () => set(!flip),
+                            from: { opacity: 0 }
+                        })}>
+                            <img className="img-fluid header-logo" src={logo} alt="" />
+                        </animated.div>
                     </NavLink>
 
                     <div></div>
