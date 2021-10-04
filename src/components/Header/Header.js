@@ -11,13 +11,12 @@ const Header = () => {
     const bellIcon = <FontAwesomeIcon icon={faCalendar} />
     const blogIcon = <FontAwesomeIcon icon={faBlog} />
     const aboutIcon = <FontAwesomeIcon icon={faAddressCard} />
-    const phoneIcon = <FontAwesomeIcon icon={faPhone} />
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
                 <div class="container-fluid">
                     <NavLink className="navbar-brand" to="/">
-                        <img className="img-fluid" src={logo} alt="" />
+                        <img className="img-fluid " src={logo} alt="" />
                     </NavLink>
 
                     <div></div>

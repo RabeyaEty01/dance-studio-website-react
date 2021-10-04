@@ -3,6 +3,12 @@ import './Home.css';
 import coverphoto from '../../images/cover.jpg';
 import coverphoto2 from '../../images/cover2.jpg';
 import coverphoto3 from '../../images/cover3.jpg';
+import logo1 from '../../images/investors logo/alibaba.png';
+import logo2 from '../../images/investors logo/ajkerdeal.png';
+import logo3 from '../../images/investors logo/amazon.png';
+import logo4 from '../../images/investors logo/bdshop.png';
+import logo5 from '../../images/investors logo/daraz.png';
+import logo6 from '../../images/investors logo/othoba.png';
 
 import { Carousel, Row } from 'react-bootstrap';
 import Service from '../Service/Service';
@@ -92,6 +98,41 @@ const Home = () => {
 
                 </div>
             </div>
+
+            <section class="bg-light bg-gradient">
+                <div class="container">
+                    <h2 class="section-title text-center my-5">OUR PARTNERS</h2>
+                    <div class="row row-cols-1 row-cols-md-6 g-4">
+                        <div class="col">
+                            <img src={logo1} class="card-img-top" alt="..."/>
+                        </div>
+                        <div class="col">
+                            <img src={logo2} class="card-img-top" alt="..."/>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <img src={logo3} class="card-img-top" alt="..."/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src={logo4} class="card-img-top img-fluid" alt="..."/>
+                        </div>
+                        <div class="col">
+                            <img src={logo5} class="card-img-top img-fluid" alt="..."/>
+                        </div>
+                        <div class="col">
+                            <img src={logo6} class="card-img-top img-fluid" alt="..."/>
+                        </div>
+                    
+                      
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
         </div>
     );
 };
