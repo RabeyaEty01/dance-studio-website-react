@@ -11,7 +11,7 @@ const Blog = (props) => {
 
     return (
         <div>
-            <div class="card border-0 mb-3 p-5">
+            <div class="card mb-3 p-5 ms-5 me-5">
                 <div class="row g-0">
                     <div class="col-md-6">
                         <img src={img} class="img-fluid blog-img" alt="..."></img>

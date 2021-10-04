@@ -14,7 +14,7 @@ const Blogs = () => {
     return (
         <div className="my-5">
             <h2 className="my-5">Recent Blogs</h2>
-            <Row xs={1} md={1} className="service-container g-4 img-fluid">
+            <Row xs={1} md={1} className="service-container  g-4 img-fluid">
                 {
                     blogs.map(blog => <Blog
                         key={blog.id}
