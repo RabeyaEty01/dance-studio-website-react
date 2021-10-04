@@ -1,6 +1,6 @@
 # Dance School-Website
 
-You can See the live project here (https://github.com/facebook/create-react-app).
+You can See the live project here (https://youthful-swirles-79eeb7.netlify.app/).
 
 ## In This Project 
 
