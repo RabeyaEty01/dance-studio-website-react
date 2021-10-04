@@ -9,6 +9,10 @@ import logo3 from '../../images/investors logo/amazon.png';
 import logo4 from '../../images/investors logo/bdshop.png';
 import logo5 from '../../images/investors logo/daraz.png';
 import logo6 from '../../images/investors logo/othoba.png';
+import back1 from '../../images/back1.jpg';
+import back2 from '../../images/back2.jpg';
+import back3 from '../../images/back3.jpg';
+import back4 from '../../images/back4.jpg';
 
 import { Carousel, Row } from 'react-bootstrap';
 import Service from '../Service/Service';
@@ -64,9 +68,25 @@ const Home = () => {
                 </Carousel>
             </div>
 
+            <div className="my-5">
+                <div>
+                    <h2 className="my-5">Learn Dance With Us</h2>
+                    <h4 className="text-center text-secondary">You may be a skillful, <br />
+                        effective employer but  if you don’t <br /> trust your  personnel and the  opposite.</h4>
+                </div>
+
+                <div className="d-flex my-5">
+                    <img className="img-card w-25" src={back1} alt="" />
+                    <img className="img-card w-25 my-5" src={back2} alt="" />
+                    <img className="img-card w-25" src={back3} alt="" />
+                    <img className="img-card w-25 my-5" src={back4} alt="" />
+                </div>
+            </div>
+
             {/* some service  */}
 
             <div className="my-5">
+                <h2 className="my-5">Our Services</h2>
                 <Row xs={1} md={4} className="service-container g-4 img-fluid">
                     {
 
@@ -99,32 +119,33 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* invastors section  */}
             <section class="bg-light bg-gradient">
                 <div class="container">
                     <h2 class="section-title text-center my-5">OUR PARTNERS</h2>
                     <div class="row row-cols-1 row-cols-md-6 g-4">
                         <div class="col">
-                            <img src={logo1} class="card-img-top" alt="..."/>
+                            <img src={logo1} class="card-img-top" alt="..." />
                         </div>
                         <div class="col">
-                            <img src={logo2} class="card-img-top" alt="..."/>
+                            <img src={logo2} class="card-img-top" alt="..." />
                         </div>
                         <div class="col">
                             <div>
-                                <img src={logo3} class="card-img-top" alt="..."/>
+                                <img src={logo3} class="card-img-top" alt="..." />
                             </div>
                         </div>
                         <div class="col">
-                            <img src={logo4} class="card-img-top img-fluid" alt="..."/>
+                            <img src={logo4} class="card-img-top img-fluid" alt="..." />
                         </div>
                         <div class="col">
-                            <img src={logo5} class="card-img-top img-fluid" alt="..."/>
+                            <img src={logo5} class="card-img-top img-fluid" alt="..." />
                         </div>
                         <div class="col">
-                            <img src={logo6} class="card-img-top img-fluid" alt="..."/>
+                            <img src={logo6} class="card-img-top img-fluid" alt="..." />
                         </div>
-                    
-                      
+
+
                     </div>
 
                 </div>
